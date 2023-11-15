@@ -1,1 +1,1 @@
-#Countdown Timer to Thanksgiving Recipe Organizer
+#Thanksgiving Recipe Organizer
