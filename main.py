@@ -1,8 +1,17 @@
 #Thanksgiving Recipe Organizer Allowing for 5 Resipes
 #Welcome Messages
-#Define Array
+#Define Varibles
+time = 0
+#Define Arrays
 Recipe = []
-
+RecipesOne = []
+RecipesTwo = []
+RecipesThree = []
+RecipesFour = []
+RecipesFive = []
+#Define Functions
+def recipeDetails(array):
+    time = int(input("How many hours will "))
 #Adding in Resipes
 while True:
     numberOfRecipes = int(input("How many Resipies are you adding? (1-5) "))
@@ -12,6 +21,7 @@ while True:
         Recipe.append({
             "Recipe Title": recipeTitle
         })
+        '''
         if i == 1:
             RecipesOne = []
         elif i == 2:
@@ -25,3 +35,4 @@ while True:
         else:
             print("Error! Pick a number 1 through 5.")
             continue
+        '''
