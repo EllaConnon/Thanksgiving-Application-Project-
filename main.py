@@ -21,18 +21,51 @@ while True:
         Recipe.append({
             "Recipe Title": recipeTitle
         })
-        '''
         if i == 1:
-            RecipesOne = []
-        elif i == 2:
-            RecipesTwo = []
-        elif i == 3:
-            RecipesThree = []
-        elif i == 4:
-            RecipesFour = []
-        elif i == 5:
-            RecipesFive = []
-        else:
-            print("Error! Pick a number 1 through 5.")
-            continue
-        '''
+            prepTime = int(input("How many minutes does it take to prep for this recipe? "))
+            cookTime = int(input("How many minutes does it take to cook this recipe? "))
+            servings = float(input("How many servings does the recipe yield? "))
+            RecipesOne.append({
+                "Prep Time: ": prepTime
+            })
+            RecipesOne.append({
+                "Cook Time: ": cookTime
+            })
+            RecipesOne.append({
+                "Yields: ": servings
+            })
+            numberOfIngredients = int(input("How many ingredients are in the recipe? "))
+            for w in range(numberOfIngredients):
+                ingredient = input("What is the ingredient? ")
+                amount = float(input("How much of " + str(ingredient) + "? "))
+                RecipesOne.append({
+                    "Ingredient: ": ingredient
+                })
+                RecipesOne.append({
+                    "Amount of ingredient: ": amount
+                })
+            print("Input Next Recipe")
+        if i == 2:
+            prepTime = int(input("How many minutes does it take to prep for this recipe? "))
+            cookTime = int(input("How many minutes does it take to cook this recipe? "))
+            servings = float(input("How many servings does the recipe yield? "))
+            RecipesTwo.append({
+                "Prep Time: ": prepTime
+            })
+            RecipesTwo.append({
+                "Cook Time: ": cookTime
+            })
+            RecipesTwo.append({
+                "Yields: ": servings
+            })
+            numberOfIngredients = int(input("How many ingredients are in the recipe? "))
+            for w in range(numberOfIngredients):
+                ingredient = input("What is the ingredient? ")
+                amount = float(input("How much of " + str(ingredient) + "? "))
+                RecipesTwo.append({
+                    "Ingredient: ": ingredient
+                })
+                RecipesTwo.append({
+                    "Amount of ingredient: ": amount
+                })
+            print("Input Next Recipe")
