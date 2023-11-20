@@ -1,7 +1,5 @@
 #Thanksgiving Recipe Organizer Allowing for 5 Resipes
 #Welcome Messages
-#Define Varibles
-time = 0
 #Define Arrays
 Recipe = []
 RecipesOne = []
@@ -9,9 +7,6 @@ RecipesTwo = []
 RecipesThree = []
 RecipesFour = []
 RecipesFive = []
-#Define Functions
-def recipeDetails(array):
-    time = int(input("How many hours will "))
 #Adding in Resipes
 while True:
     numberOfRecipes = int(input("How many Resipies are you adding? (1-5) "))
@@ -21,6 +16,7 @@ while True:
         Recipe.append({
             "Recipe Title": recipeTitle
         })
+#Recipe 1
         if i == 1:
             prepTime = int(input("How many minutes does it take to prep for this recipe? "))
             cookTime = int(input("How many minutes does it take to cook this recipe? "))
@@ -45,6 +41,7 @@ while True:
                     "Amount of ingredient: ": amount
                 })
             print("Input Next Recipe")
+#Recipe 2
         if i == 2:
             prepTime = int(input("How many minutes does it take to prep for this recipe? "))
             cookTime = int(input("How many minutes does it take to cook this recipe? "))
@@ -66,6 +63,81 @@ while True:
                     "Ingredient: ": ingredient
                 })
                 RecipesTwo.append({
+                    "Amount of ingredient: ": amount
+                })
+            print("Input Next Recipe")
+#Recipe 3
+        if i == 3:
+            prepTime = int(input("How many minutes does it take to prep for this recipe? "))
+            cookTime = int(input("How many minutes does it take to cook this recipe? "))
+            servings = float(input("How many servings does the recipe yield? "))
+            RecipesThree.append({
+                "Prep Time: ": prepTime
+            })
+            RecipesThree.append({
+                "Cook Time: ": cookTime
+            })
+            RecipesThree.append({
+                "Yields: ": servings
+            })
+            numberOfIngredients = int(input("How many ingredients are in the recipe? "))
+            for w in range(numberOfIngredients):
+                ingredient = input("What is the ingredient? ")
+                amount = float(input("How much of " + str(ingredient) + "? "))
+                RecipesThree.append({
+                    "Ingredient: ": ingredient
+                })
+                RecipesThree.append({
+                    "Amount of ingredient: ": amount
+                })
+            print("Input Next Recipe")
+#Recipe 4
+        if i == 4:
+            prepTime = int(input("How many minutes does it take to prep for this recipe? "))
+            cookTime = int(input("How many minutes does it take to cook this recipe? "))
+            servings = float(input("How many servings does the recipe yield? "))
+            RecipesFour.append({
+                "Prep Time: ": prepTime
+            })
+            RecipesFour.append({
+                "Cook Time: ": cookTime
+            })
+            RecipesFour.append({
+                "Yields: ": servings
+            })
+            numberOfIngredients = int(input("How many ingredients are in the recipe? "))
+            for w in range(numberOfIngredients):
+                ingredient = input("What is the ingredient? ")
+                amount = float(input("How much of " + str(ingredient) + "? "))
+                RecipesFour.append({
+                    "Ingredient: ": ingredient
+                })
+                RecipesFour.append({
+                    "Amount of ingredient: ": amount
+                })
+            print("Input Next Recipe")
+#Recipe 5
+        if i == 5:
+            prepTime = int(input("How many minutes does it take to prep for this recipe? "))
+            cookTime = int(input("How many minutes does it take to cook this recipe? "))
+            servings = float(input("How many servings does the recipe yield? "))
+            RecipesFive.append({
+                "Prep Time: ": prepTime
+            })
+            RecipesFive.append({
+                "Cook Time: ": cookTime
+            })
+            RecipesFive.append({
+                "Yields: ": servings
+            })
+            numberOfIngredients = int(input("How many ingredients are in the recipe? "))
+            for w in range(numberOfIngredients):
+                ingredient = input("What is the ingredient? ")
+                amount = float(input("How much of " + str(ingredient) + "? "))
+                RecipesFive.append({
+                    "Ingredient: ": ingredient
+                })
+                RecipesFive.append({
                     "Amount of ingredient: ": amount
                 })
             print("Input Next Recipe")
