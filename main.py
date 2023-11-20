@@ -133,6 +133,7 @@ while True:
             numberOfIngredients = int(input("How many ingredients are in the recipe? "))
             for w in range(numberOfIngredients):
                 ingredient = input("What is the ingredient? ")
+                nit = input("What unit is the measurement in? ")
                 amount = float(input("How much of " + str(ingredient) + "? "))
                 RecipesFive.append({
                     "Ingredient: ": ingredient
