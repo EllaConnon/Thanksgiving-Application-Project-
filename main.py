@@ -33,12 +33,16 @@ while True:
             numberOfIngredients = int(input("How many ingredients are in the recipe? "))
             for w in range(numberOfIngredients):
                 ingredient = input("What is the ingredient? ")
+                unit = input("What unit is the measurement in? ")
                 amount = float(input("How much of " + str(ingredient) + "? "))
                 RecipesOne.append({
                     "Ingredient: ": ingredient
                 })
                 RecipesOne.append({
                     "Amount of ingredient: ": amount
+                })
+                RecipesOne.append({
+                    "Unit: ": unit
                 })
             print("Input Next Recipe")
 #Recipe 2
@@ -58,12 +62,16 @@ while True:
             numberOfIngredients = int(input("How many ingredients are in the recipe? "))
             for w in range(numberOfIngredients):
                 ingredient = input("What is the ingredient? ")
+                unit = input("What unit is the measurement in? ")
                 amount = float(input("How much of " + str(ingredient) + "? "))
                 RecipesTwo.append({
                     "Ingredient: ": ingredient
                 })
                 RecipesTwo.append({
                     "Amount of ingredient: ": amount
+                })
+                RecipesTwo.append({
+                    "Unit: ": unit
                 })
             print("Input Next Recipe")
 #Recipe 3
@@ -90,6 +98,9 @@ while True:
                 RecipesThree.append({
                     "Amount of ingredient: ": amount
                 })
+                RecipesThree.append({
+                    "Unit: ": unit
+                })
             print("Input Next Recipe")
 #Recipe 4
         elif i == 4:
@@ -108,12 +119,16 @@ while True:
             numberOfIngredients = int(input("How many ingredients are in the recipe? "))
             for w in range(numberOfIngredients):
                 ingredient = input("What is the ingredient? ")
+                unit = input("What unit is the measurement in? ")
                 amount = float(input("How much of " + str(ingredient) + "? "))
                 RecipesFour.append({
                     "Ingredient: ": ingredient
                 })
                 RecipesFour.append({
                     "Amount of ingredient: ": amount
+                })
+                RecipesFour.append({
+                    "Unit: ": unit
                 })
             print("Input Next Recipe")
 #Recipe 5
