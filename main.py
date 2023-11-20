@@ -42,7 +42,7 @@ while True:
                 })
             print("Input Next Recipe")
 #Recipe 2
-        if i == 2:
+        elif i == 2:
             prepTime = int(input("How many minutes does it take to prep for this recipe? "))
             cookTime = int(input("How many minutes does it take to cook this recipe? "))
             servings = float(input("How many servings does the recipe yield? "))
@@ -67,7 +67,7 @@ while True:
                 })
             print("Input Next Recipe")
 #Recipe 3
-        if i == 3:
+        elif i == 3:
             prepTime = int(input("How many minutes does it take to prep for this recipe? "))
             cookTime = int(input("How many minutes does it take to cook this recipe? "))
             servings = float(input("How many servings does the recipe yield? "))
@@ -92,7 +92,7 @@ while True:
                 })
             print("Input Next Recipe")
 #Recipe 4
-        if i == 4:
+        elif i == 4:
             prepTime = int(input("How many minutes does it take to prep for this recipe? "))
             cookTime = int(input("How many minutes does it take to cook this recipe? "))
             servings = float(input("How many servings does the recipe yield? "))
@@ -117,7 +117,7 @@ while True:
                 })
             print("Input Next Recipe")
 #Recipe 5
-        if i == 5:
+        elif i == 5:
             prepTime = int(input("How many minutes does it take to prep for this recipe? "))
             cookTime = int(input("How many minutes does it take to cook this recipe? "))
             servings = float(input("How many servings does the recipe yield? "))
@@ -141,3 +141,6 @@ while True:
                     "Amount of ingredient: ": amount
                 })
             print("Input Next Recipe")
+        else:
+            print("Error! Pick a number 1 through 5.")
+            continue
