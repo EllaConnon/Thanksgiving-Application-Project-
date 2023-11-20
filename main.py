@@ -141,6 +141,9 @@ while True:
                 RecipesFive.append({
                     "Amount of ingredient: ": amount
                 })
+                RecipesFive.append({
+                    "Unit: ": unit
+                })
             print("Input Next Recipe")
         else:
             print("Error! Pick a number 1 through 5.")
