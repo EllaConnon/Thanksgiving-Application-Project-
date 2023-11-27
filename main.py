@@ -1,12 +1,28 @@
 #Thanksgiving Recipe Organizer Allowing for 5 Resipes
 #Welcome Messages
 #Define Arrays
+#overall resipies
 Recipe = []
+#details
 RecipesOne = []
 RecipesTwo = []
 RecipesThree = []
 RecipesFour = []
 RecipesFive = []
+#ingredits array
+ingredientsOne = []
+ingredientsTwo = []
+ingredientsThree = []
+ingredientsFour = []
+ingredientsFive = []
+#steps arrays
+stepsOne = []
+stepTwo = []
+stepThree = []
+stepFour = []
+stepFive = []
+
+steps = True
 #Adding in Resipes
 while True:
     numberOfRecipes = int(input("How many Resipies are you adding? (1-5) "))
@@ -35,15 +51,21 @@ while True:
                 ingredient = input("What is the ingredient? ")
                 unit = input("What unit is the measurement in? ")
                 amount = float(input("How much of " + str(ingredient) + "? "))
-                RecipesOne.append({
+                ingredientsOne.append({
                     "Ingredient: ": ingredient
                 })
-                RecipesOne.append({
+                ingredientsOne.append({
                     "Amount of ingredient: ": amount
                 })
-                RecipesOne.append({
+                ingredientsOne.append({
                     "Unit: ": unit
                 })
+            while steps:
+                print("Step format: #.) step here")
+                step = input("What is the step? ")
+                stepsOne.append(step)
+                steps = input("Are there more steps? ")
+                steps = steps == "yes" or steps == "Yes"
             print("Input Next Recipe")
 #Recipe 2
         elif i == 2:
