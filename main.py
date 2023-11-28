@@ -166,10 +166,10 @@ while True:
             cookTime = int(input("How many minutes does it take to cook this recipe? "))
             servings = float(input("How many servings does the recipe yield? "))
             RecipesFive.append({
-                "Prep Time(minutes): ": prepTime
+                "Prep Time in minutes: ": prepTime
             })
             RecipesFive.append({
-                "Cook Time(minutes): ": cookTime
+                "Cook Time in minutes: ": cookTime
             })
             RecipesFive.append({
                 "Yields: ": servings
