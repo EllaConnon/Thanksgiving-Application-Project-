@@ -101,13 +101,13 @@ while True:
             prepTime = int(input("How many minutes does it take to prep for this recipe? "))
             cookTime = int(input("How many minutes does it take to cook this recipe? "))
             servings = float(input("How many servings does the recipe yield? "))
-            RecipesOne.append({
+            RecipesThree.append({
                 "Prep Time(minutes): ": prepTime
             })
-            RecipesOne.append({
+            RecipesThree.append({
                 "Cook Time(minutes): ": cookTime
             })
-            RecipesOne.append({
+            RecipesThree.append({
                 "Yields: ": servings
             })
             numberOfIngredients = int(input("How many ingredients are in the recipe? "))
@@ -118,15 +118,15 @@ while True:
                 ingredientsOne.append(ingredient)
                 ingredientsOne.append(amount)
                 ingredientsOne.append(unit)
-            RecipesOne.append(ingredientsOne)
+            RecipesThree.append(ingredientsOne)
             while steps:
                 print("Step format: #.) step here")
                 step = input("What is the step? ")
                 stepsOne.append(step)
                 steps = input("Are there more steps? ")
                 steps = steps == "yes" or steps == "Yes"
-            RecipesOne.append(stepsOne)
-            Recipe.append(RecipesOne)
+            RecipesThree.append(stepsOne)
+            Recipe.append(RecipesThree)
             print(" ")
 #Recipe 4
         elif i == 4:
