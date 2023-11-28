@@ -122,10 +122,10 @@ while True:
             while steps:
                 print("Step format: #.) step here")
                 step = input("What is the step? ")
-                stepsOne.append(step)
+                stepThree.append(step)
                 steps = input("Are there more steps? ")
                 steps = steps == "yes" or steps == "Yes"
-            RecipesThree.append(stepsOne)
+            RecipesThree.append(stepThree)
             Recipe.append(RecipesThree)
             print(" ")
 #Recipe 4
@@ -133,13 +133,13 @@ while True:
             prepTime = int(input("How many minutes does it take to prep for this recipe? "))
             cookTime = int(input("How many minutes does it take to cook this recipe? "))
             servings = float(input("How many servings does the recipe yield? "))
-            RecipesOne.append({
+            RecipesFour.append({
                 "Prep Time(minutes): ": prepTime
             })
-            RecipesOne.append({
+            RecipesFour.append({
                 "Cook Time(minutes): ": cookTime
             })
-            RecipesOne.append({
+            RecipesFour.append({
                 "Yields: ": servings
             })
             numberOfIngredients = int(input("How many ingredients are in the recipe? "))
@@ -147,31 +147,31 @@ while True:
                 ingredient = input("What is the ingredient? ")
                 unit = input("What unit is the measurement in? ")
                 amount = float(input("How much of " + str(ingredient) + "? "))
-                ingredientsOne.append(ingredient)
-                ingredientsOne.append(amount)
-                ingredientsOne.append(unit)
-            RecipesOne.append(ingredientsOne)
+                ingredientsFour.append(ingredient)
+                ingredientsFour.append(amount)
+                ingredientsFour.append(unit)
+            RecipesFour.append(ingredientsFour)
             while steps:
                 print("Step format: #.) step here")
                 step = input("What is the step? ")
-                stepsOne.append(step)
+                stepFour.append(step)
                 steps = input("Are there more steps? ")
                 steps = steps == "yes" or steps == "Yes"
-            RecipesOne.append(stepsOne)
-            Recipe.append(RecipesOne)
+            RecipesFour.append(stepFour)
+            Recipe.append(RecipesFour)
             print(" ")
 #Recipe 5
         elif i == 5:
             prepTime = int(input("How many minutes does it take to prep for this recipe? "))
             cookTime = int(input("How many minutes does it take to cook this recipe? "))
             servings = float(input("How many servings does the recipe yield? "))
-            RecipesOne.append({
+            RecipesFive.append({
                 "Prep Time(minutes): ": prepTime
             })
-            RecipesOne.append({
+            RecipesFive.append({
                 "Cook Time(minutes): ": cookTime
             })
-            RecipesOne.append({
+            RecipesFive.append({
                 "Yields: ": servings
             })
             numberOfIngredients = int(input("How many ingredients are in the recipe? "))
@@ -179,18 +179,18 @@ while True:
                 ingredient = input("What is the ingredient? ")
                 unit = input("What unit is the measurement in? ")
                 amount = float(input("How much of " + str(ingredient) + "? "))
-                ingredientsOne.append(ingredient)
-                ingredientsOne.append(amount)
-                ingredientsOne.append(unit)
-            RecipesOne.append(ingredientsOne)
+                ingredientsFive.append(ingredient)
+                ingredientsFive.append(amount)
+                ingredientsFive.append(unit)
+            RecipesFive.append(ingredientsFive)
             while steps:
                 print("Step format: #.) step here")
                 step = input("What is the step? ")
-                stepsOne.append(step)
+                stepFive.append(step)
                 steps = input("Are there more steps? ")
                 steps = steps == "yes" or steps == "Yes"
-            RecipesOne.append(stepsOne)
-            Recipe.append(RecipesOne)
+            RecipesFive.append(stepFive)
+            Recipe.append(RecipesFive)
             print(" ")
         else:
             print("Error! Pick a number 1 through 5.")
