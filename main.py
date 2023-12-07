@@ -1,5 +1,7 @@
 #Thanksgiving Recipe Organizer Allowing for 5 Recipes
 #Welcome Messages
+print("welcome mesessage here")
+print(" ")
 #Define Arrays
 #overall recipes
 Recipe = []
@@ -29,9 +31,7 @@ while True:
     for i in range(1, numberOfRecipes+1, 1):
         # Adding in Recipe
         recipeTitle = input("What is the title/name of the recipe? ")
-        Recipe.append({
-            "Recipe Title": recipeTitle
-        })
+        Recipe.append(recipeTitle)
 #Recipe 1
         if i == 1:
            prepTime = int(input("How many minutes does it take to prep for this recipe? "))
@@ -196,8 +196,11 @@ while True:
         else:
            print("Error! Pick a number 1 through 5.")
            continue
-    
-    print(" ")
-    print("Your Recipes:")
-    for e in range(0,Recipe.len(),2):
-        print(Recipe[e])
+    break
+num = len(Recipe)
+print(" ")
+print("Your Recipes:")
+for e in range(0,num,2):
+    m = 1
+    print(m+".) "+Recipe[e])
+    m = m+1
