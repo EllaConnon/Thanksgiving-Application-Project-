@@ -25,7 +25,7 @@ stepFive = ["Steps: "]
 steps = True
 #Adding in Recipes
 while True:
-   numberOfRecipes = int(input("How many Resipies are you adding? (1-5) "))
+    numberOfRecipes = int(input("How many Resipies are you adding? (1-5) "))
     for i in range(1, numberOfRecipes+1, 1):
         # Adding in Recipe
         recipeTitle = input("What is the title/name of the recipe? ")
