@@ -26,14 +26,14 @@ steps = True
 #Adding in Recipes
 while True:
    numberOfRecipes = int(input("How many Resipies are you adding? (1-5) "))
-   for i in range(1, numberOfRecipes+1, 1):
-       # Adding in Recipe
-       recipeTitle = input("What is the title/name of the recipe? ")
-       Recipe.append({
-           "Recipe Title": recipeTitle
-       })
+    for i in range(1, numberOfRecipes+1, 1):
+        # Adding in Recipe
+        recipeTitle = input("What is the title/name of the recipe? ")
+        Recipe.append({
+            "Recipe Title": recipeTitle
+        })
 #Recipe 1
-       if i == 1:
+        if i == 1:
            prepTime = int(input("How many minutes does it take to prep for this recipe? "))
            cookTime = int(input("How many minutes does it take to cook this recipe? "))
            servings = float(input("How many servings does the recipe yield? "))
@@ -65,7 +65,7 @@ while True:
            Recipe.append(RecipesOne)
            print(" ")
 #Recipe 2
-       elif i == 2:
+        elif i == 2:
            prepTime = int(input("How many minutes does it take to prep for this recipe? "))
            cookTime = int(input("How many minutes does it take to cook this recipe? "))
            servings = float(input("How many servings does the recipe yield? "))
@@ -97,7 +97,7 @@ while True:
            Recipe.append(RecipesTwo)
            print(" ")
 #Recipe 3
-       elif i == 3:
+        elif i == 3:
            prepTime = int(input("How many minutes does it take to prep for this recipe? "))
            cookTime = int(input("How many minutes does it take to cook this recipe? "))
            servings = float(input("How many servings does the recipe yield? "))
@@ -129,7 +129,7 @@ while True:
            Recipe.append(RecipesThree)
            print(" ")
 #Recipe 4
-       elif i == 4:
+        elif i == 4:
            prepTime = int(input("How many minutes does it take to prep for this recipe? "))
            cookTime = int(input("How many minutes does it take to cook this recipe? "))
            servings = float(input("How many servings does the recipe yield? "))
@@ -161,7 +161,7 @@ while True:
            Recipe.append(RecipesFour)
            print(" ")
 #Recipe 5
-       elif i == 5:
+        elif i == 5:
            prepTime = int(input("How many minutes does it take to prep for this recipe? "))
            cookTime = int(input("How many minutes does it take to cook this recipe? "))
            servings = float(input("How many servings does the recipe yield? "))
@@ -193,6 +193,11 @@ while True:
            Recipe.append(RecipesFive)
            print(" ")
 #else error statment
-       else:
+        else:
            print("Error! Pick a number 1 through 5.")
            continue
+    
+    print(" ")
+    print("Your Recipes:")
+    for e in range(0,10,2):
+        print(Recipe[e])
