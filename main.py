@@ -199,5 +199,5 @@ while True:
     
     print(" ")
     print("Your Recipes:")
-    for e in range(0,10,2):
+    for e in range(0,Recipe.len(),2):
         print(Recipe[e])
