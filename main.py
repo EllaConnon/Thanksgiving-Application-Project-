@@ -204,3 +204,4 @@ for e in range(0,num,2):
     m = 1
     print(m+".) "+Recipe[e])
     m = m+1
+which = int(input("Which recipe would you like to view? "))
