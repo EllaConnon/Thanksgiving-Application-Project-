@@ -206,3 +206,30 @@ for e in range(0,num,2):
     print(m+".) "+Recipe[e])
     m = m+1
 which = int(input("Which recipe would you like to view? "))
+numb = RecipesOne.len()
+numb = numb - 2
+if which == 1:
+    print(Recipe[0])
+    for q in range(numb):
+        print(RecipesOne[q])
+    print(' ')
+    numb = ingredientsOne.len()
+    numbb = numb/3
+    e=0
+    for w in range(0,numbb+1, 3):
+        print(ingredientsOne[e]+" "+ingredientsOne[e+2]+" "+ingredientsOne[e+1])
+        e = e + 3
+    for q in range(stepsOne.len()):
+        print(stepsOne[q])
+
+if which == 2:
+    print(" ")
+
+if which == 3:
+    print(" ")
+
+if which == 4:
+    print(" ")
+
+if which == 5:
+    print(" ")
