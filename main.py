@@ -221,7 +221,7 @@ while True:
         e=0
         m=1
         for w in range(0,numbb+1, 3):
-            print(ingredientsOne[e]+" "+ingredientsOne[e+2]+" "+ingredientsOne[e+1])
+            print(str(ingredientsOne[e])+" "+str(ingredientsOne[e+2])+" "+str(ingredientsOne[e+1]))
             e = e + 3
         for q in range(len(stepsOne)):
             print(str(m) +".) "+ str(stepsOne[q]))
