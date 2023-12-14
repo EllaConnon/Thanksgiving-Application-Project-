@@ -198,38 +198,101 @@ while True:
            print("Error! Pick a number 1 through 5.")
            continue
     break
-num = len(Recipe)
-print(" ")
-print("Your Recipes:")
-for e in range(0,num,2):
-    m = 1
-    print(m+".) "+Recipe[e])
-    m = m+1
-which = int(input("Which recipe would you like to view? "))
-numb = RecipesOne.len()
-numb = numb - 2
-if which == 1:
-    print(Recipe[0])
-    for q in range(numb):
-        print(RecipesOne[q])
-    print(' ')
-    numb = ingredientsOne.len()
-    numbb = numb/3
-    e=0
-    for w in range(0,numbb+1, 3):
-        print(ingredientsOne[e]+" "+ingredientsOne[e+2]+" "+ingredientsOne[e+1])
-        e = e + 3
-    for q in range(stepsOne.len()):
-        print(stepsOne[q])
-
-if which == 2:
+while True:
+    num = len(Recipe)
     print(" ")
-
-if which == 3:
+    print("Your Recipes:")
+    for e in range(0,num,2):
+        m = 1
+        print(m+".) "+Recipe[e])
+        m = m+1
+    which = int(input("Which recipe would you like to view? "))
+    numb = RecipesOne.len()
+    numb = numb - 2
     print(" ")
+    
+    if which == 1:
+        print(Recipe[0])
+        for q in range(numb):
+            print(RecipesOne[q])
+        print(' ')
+        numb = ingredientsOne.len()
+        numbb = numb/3
+        e=0
+        m=1
+        for w in range(0,numbb+1, 3):
+            print(ingredientsOne[e]+" "+ingredientsOne[e+2]+" "+ingredientsOne[e+1])
+            e = e + 3
+        for q in range(stepsOne.len()):
+            print(str(m) +".) "+ str(stepsOne[q]))
+            m = m+1
 
-if which == 4:
-    print(" ")
+    elif which == 2:
+        print(Recipe[2])
+        for q in range(numb):
+            print(RecipesTwo[q])
+        print(' ')
+        numb = ingredientsTwo.len()
+        numbb = numb/3
+        e=0
+        m=1
+        for w in range(0,numbb+1, 3):
+            print(ingredientsTwo[e]+" "+ingredientsTwo[e+2]+" "+ingredientsTwo[e+1])
+            e = e + 3
+        for q in range(stepTwo.len()):
+            print(str(m) +".) "+ str(stepTwo[q]))
+            m = m+1
 
-if which == 5:
-    print(" ")
+    elif which == 3:
+        print(Recipe[4])
+        for q in range(numb):
+            print(RecipesThree[q])
+        print(' ')
+        numb = ingredientsThree.len()
+        numbb = numb/3
+        e=0
+        m=1
+        for w in range(0,numbb+1, 3):
+            print(ingredientsThree[e]+" "+ingredientsThree[e+2]+" "+ingredientsThree[e+1])
+            e = e + 3
+        for q in range(stepThree.len()):
+            print(str(m) +".) "+ str(stepThree[q]))
+            m = m+1
+
+    elif which == 4:
+        print(Recipe[6])
+        for q in range(numb):
+            print(RecipesFour[q])
+        print(' ')
+        numb = ingredientsFour.len()
+        numbb = numb/3
+        e=0
+        m=1
+        for w in range(0,numbb+1, 3):
+            print(ingredientsFour[e]+" "+ingredientsFour[e+2]+" "+ingredientsFour[e+1])
+            e = e + 3
+        for q in range(stepFour.len()):
+            print(str(m) +".) "+ str(stepFour[q]))
+            m = m+1
+
+    elif which == 5:
+        print(Recipe[8])
+        for q in range(numb):
+            print(RecipesFive[q])
+        print(' ')
+        numb = ingredientsFive.len()
+        numbb = numb/3
+        e=0
+        m=1
+        for w in range(0,numbb+1, 3):
+            print(ingredientsFive[e]+" "+ingredientsFive[e+2]+" "+ingredientsFive[e+1])
+            e = e + 3
+        for q in range(stepFive.len()):
+            print(str(m) +".) "+ str(stepFive[q]))
+            m = m+1
+    
+    ask = input("Would you like to view another recipe? ")
+    if ask == "yes" or ask == "Yes":
+        continue
+    else:
+        break
