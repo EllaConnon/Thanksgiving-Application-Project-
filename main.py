@@ -58,7 +58,7 @@ while True:
                ingredientsOne.append(unit)
            RecipesOne.append(ingredientsOne)
            while steps:
-               print("Step format: #.) step here")
+               print("Just enter the step, no numbers in front of the step.")
                step = input("What is the step? ")
                stepsOne.append(step)
                steps = input("Are there more steps? ")
@@ -90,7 +90,7 @@ while True:
                ingredientsTwo.append(unit)
            RecipesTwo.append(ingredientsTwo)
            while steps:
-               print("Step format: #.) step here")
+               print("Just enter the step, no numbers in front of the step.")
                step = input("What is the step? ")
                stepTwo.append(step)
                steps = input("Are there more steps? ")
@@ -122,7 +122,7 @@ while True:
                ingredientsThree.append(unit)
            RecipesThree.append(ingredientsThree)
            while steps:
-               print("Step format: #.) step here")
+               print("Just enter the step, no numbers in front of the step.")
                step = input("What is the step? ")
                stepThree.append(step)
                steps = input("Are there more steps? ")
@@ -154,7 +154,7 @@ while True:
                ingredientsFour.append(unit)
            RecipesFour.append(ingredientsFour)
            while steps:
-               print("Step format: #.) step here")
+               print("Just enter the step, no numbers in front of the step.")
                step = input("What is the step? ")
                stepFour.append(step)
                steps = input("Are there more steps? ")
@@ -186,7 +186,7 @@ while True:
                ingredientsFive.append(unit)
            RecipesFive.append(ingredientsFive)
            while steps:
-               print("Step format: #.) step here")
+               print("Just enter the step, no numbers in front of the step.")
                step = input("What is the step? ")
                stepFive.append(step)
                steps = input("Are there more steps? ")
