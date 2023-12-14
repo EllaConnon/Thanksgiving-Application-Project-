@@ -204,7 +204,7 @@ while True:
     print("Your Recipes:")
     for e in range(0,num,2):
         m = 1
-        print(m+".) "+Recipe[e])
+        print(str(m)+".) "+str(Recipe[e]))
         m = m+1
     which = int(input("Which recipe would you like to view? "))
     numb = RecipesOne.len()
