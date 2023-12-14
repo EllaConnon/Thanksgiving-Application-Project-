@@ -220,6 +220,7 @@ while True:
         numbb = int(numb/3)
         e=1
         m=1
+        print(ingredientsOne[0])
         for w in range(0,numbb+1, 3):
             print(str(ingredientsOne[e])+" "+str(ingredientsOne[e+2])+" "+str(ingredientsOne[e+1]))
             e = e + 3
