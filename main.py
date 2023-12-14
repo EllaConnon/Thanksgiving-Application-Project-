@@ -1,7 +1,7 @@
 #Thanksgiving Recipe Organizer Allowing for 5 Recipes
 #Welcome Messages
 print(" ")
-print("welcome mesessage here")
+print("Welcome to the Thanksgiving 5 Recipe holder! If you need help using this application please read the README page's instructions. Enjoy!!")
 print(" ")
 #Define Arrays
 #overall recipes
