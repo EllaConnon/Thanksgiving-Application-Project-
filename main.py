@@ -218,7 +218,7 @@ while True:
         print(' ')
         numb = len(ingredientsOne)
         numbb = int(numb/3)
-        e=0
+        e=1
         m=1
         for w in range(0,numbb+1, 3):
             print(str(ingredientsOne[e])+" "+str(ingredientsOne[e+2])+" "+str(ingredientsOne[e+1]))
