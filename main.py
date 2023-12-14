@@ -29,7 +29,7 @@ steps = True
 m = 1
 #Adding in Recipes
 while True:
-    numberOfRecipes = int(input("How many Resipies are you adding? (1-5) "))
+    numberOfRecipes = int(input("How many Recipes are you adding? (1-5) "))
     for i in range(1, numberOfRecipes+1, 1):
         # Adding in Recipe
         recipeTitle = input("What is the title/name of the recipe? ")
@@ -205,7 +205,7 @@ while True:
     print("Your Recipes:")
     for e in range(0,num,2):
         print(str(m)+".) "+str(Recipe[e]))
-        m = m+1
+        m = m + 1
     which = int(input("Which recipe would you like to view? "))
     numb = len(RecipesOne)
     numb = numb - 2
@@ -217,7 +217,7 @@ while True:
             print(RecipesOne[q])
         print(' ')
         numb = len(ingredientsOne)
-        numbb = numb/3
+        numbb = int(numb/3)
         e=0
         m=1
         for w in range(0,numbb+1, 3):
