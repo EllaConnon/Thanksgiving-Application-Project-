@@ -13,11 +13,11 @@ RecipesThree = []
 RecipesFour = []
 RecipesFive = []
 #ingredients array
-ingredientsOne = ["Ingredients: "]
-ingredientsTwo = ["Ingredients: "]
-ingredientsThree = ["Ingredients: "]
-ingredientsFour = ["Ingredients: "]
-ingredientsFive = ["Ingredients: "]
+ingredientsOne = []
+ingredientsTwo = []
+ingredientsThree = []
+ingredientsFour = []
+ingredientsFive = []
 #steps arrays
 stepsOne = ["Steps: "]
 stepTwo = ["Steps: "]
@@ -218,9 +218,9 @@ while True:
         print(' ')
         numb = len(ingredientsOne)
         numbb = int(numb/3)
-        e=1
+        e=0
         m=1
-        print(ingredientsOne[0])
+        print("Ingredients:")
         for w in range(0,numbb+1, 3):
             print(str(ingredientsOne[e])+" "+str(ingredientsOne[e+2])+" "+str(ingredientsOne[e+1]))
             e = e + 3
@@ -234,11 +234,13 @@ while True:
             print(RecipesTwo[q])
         print(' ')
         numb = len(ingredientsTwo)
-        numbb = numb/3
+        numb = int(numb)
+        numbb = int(numb/3)
         e=0
         m=1
+        print(str(ingredientsTwo[0]))
         for w in range(0,numbb+1, 3):
-            print(ingredientsTwo[e]+" "+ingredientsTwo[e+2]+" "+ingredientsTwo[e+1])
+            print(str(ingredientsTwo[e])+" "+str(ingredientsTwo[e+2])+" "+str(ingredientsTwo[e+1]))
             e = e + 3
         for q in range(len(stepTwo)):
             print(str(m) +".) "+ str(stepTwo[q]))
