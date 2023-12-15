@@ -24,13 +24,12 @@ stepTwo = ["Steps: "]
 stepThree = ["Steps: "]
 stepFour = ["Steps: "]
 stepFive = ["Steps: "]
-
-steps = True
 m = 1
 #Adding in Recipes
 while True:
     numberOfRecipes = int(input("How many Recipes are you adding? (1-5) "))
     for i in range(1, numberOfRecipes+1, 1):
+        steps = True
         # Adding in Recipe
         recipeTitle = input("What is the title/name of the recipe? ")
         Recipe.append(recipeTitle)
@@ -90,11 +89,11 @@ while True:
                ingredientsTwo.append(unit)
             RecipesTwo.append(ingredientsTwo)
             while steps:
-               print("Just enter the step, no numbers in front of the step.")
-               step = input("What is the step? ")
-               stepTwo.append(step)
-               steps = input("Are there more steps? ")
-               steps = steps == "yes" or steps == "Yes"
+                print("Just enter the step, no numbers in front of the step.")
+                step = input("What is the step? ")
+                stepTwo.append(step)
+                steps = input("Are there more steps? ")
+                steps = steps == "yes" or steps == "Yes"
             RecipesTwo.append(stepTwo)
             Recipe.append(RecipesTwo)
             print(" ")
@@ -224,6 +223,8 @@ while True:
         for w in range(0,numbb+1, 3):
             print(str(ingredientsOne[e])+" "+str(ingredientsOne[e+2])+" "+str(ingredientsOne[e+1]))
             e = e + 3
+        print(" ")
+        print("Steps:")
         for q in range(len(stepsOne)):
             print(str(m) +".) "+ str(stepsOne[q]))
             m = m+1
@@ -238,10 +239,12 @@ while True:
         numbb = int(numb/3)
         e=0
         m=1
-        print(str(ingredientsTwo[0]))
+        print("Ingredients:")
         for w in range(0,numbb+1, 3):
             print(str(ingredientsTwo[e])+" "+str(ingredientsTwo[e+2])+" "+str(ingredientsTwo[e+1]))
             e = e + 3
+        print(" ")
+        print("Steps:")
         for q in range(len(stepTwo)):
             print(str(m) +".) "+ str(stepTwo[q]))
             m = m+1
@@ -252,12 +255,16 @@ while True:
             print(RecipesThree[q])
         print(' ')
         numb = len(ingredientsThree)
-        numbb = numb/3
+        numb = int(numb)
+        numbb = int(numb/3)
         e=0
         m=1
+        print("Ingredients:")
         for w in range(0,numbb+1, 3):
-            print(ingredientsThree[e]+" "+ingredientsThree[e+2]+" "+ingredientsThree[e+1])
+            print(str(ingredientsThree[e])+" "+str(ingredientsThree[e+2])+" "+str(ingredientsThree[e+1]))
             e = e + 3
+        print(" ")
+        print("Steps:")
         for q in range(len(stepThree)):
             print(str(m) +".) "+ str(stepThree[q]))
             m = m+1
@@ -268,12 +275,16 @@ while True:
             print(RecipesFour[q])
         print(' ')
         numb = len(ingredientsFour)
-        numbb = numb/3
+        numb = int(numb)
+        numbb = int(numb/3)
         e=0
         m=1
+        print("Ingredients:")
         for w in range(0,numbb+1, 3):
-            print(ingredientsFour[e]+" "+ingredientsFour[e+2]+" "+ingredientsFour[e+1])
+            print(str(ingredientsFour[e])+" "+str(ingredientsFour[e+2])+" "+str(ingredientsFour[e+1]))
             e = e + 3
+        print(" ")
+        print("Steps:")
         for q in range(len(stepFour)):
             print(str(m) +".) "+ str(stepFour[q]))
             m = m+1
@@ -283,19 +294,24 @@ while True:
         for q in range(numb):
             print(RecipesFive[q])
         print(' ')
-        numb = ingredientsFive.len()
-        numbb = numb/3
+        numb = len(ingredientsFive)
+        numb = int(numb)
+        numbb = int(numb/3)
         e=0
         m=1
+        print("Ingredients:")
         for w in range(0,numbb+1, 3):
-            print(ingredientsFive[e]+" "+ingredientsFive[e+2]+" "+ingredientsFive[e+1])
+            print(str(ingredientsFive[e])+" "+str(ingredientsFive[e+2])+" "+str(ingredientsFive[e+1]))
             e = e + 3
+        print(" ")
+        print("Steps:")
         for q in range(len(stepFive)):
             print(str(m) +".) "+ str(stepFive[q]))
             m = m+1
     print(" ")
     ask = input("Would you like to view another recipe? ")
     if ask == "yes" or ask == "Yes":
+        m = 1
         continue
     else:
         break
