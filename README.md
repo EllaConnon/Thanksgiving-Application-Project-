@@ -17,4 +17,5 @@ This application stores up to five recipes the user can view after entering the 
 7. After the names of the recipes are printed, to view one, type in the number that corresponds to it on the list.
 8. If you would like to view another one answer the prompt: `Would you like to view another recipe?` with yes and repeat this step and step 7 as many times as you want to view recipes.
 9. To exit the program respond with a no instead of a yes.
+
 Enjoy!
