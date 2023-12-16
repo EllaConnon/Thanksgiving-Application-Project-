@@ -1,1 +1,1 @@
-# Thanksgiving Application Project 
+# Thanksgiving Recipe Holder
